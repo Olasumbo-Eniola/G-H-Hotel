@@ -1,0 +1,163 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #072522;
+    position: relative;
+    bottom: 0;
+    background-image: url('../images/bitmap.png');
+    background-repeat: no-repeat;
+    background-size: 700px 300px;
+    background-position: right center;
+    padding-bottom: 40px;
+
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        padding-left: 60px;
+        &::after{
+            width: 100%;
+            height: 100%;
+            background-color: #00000099;
+            z-index: 0;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .block{
+            margin-top: 50px;
+            line-height: 2.0em;
+            z-index: 1;
+            .block-item{
+                overflow-x: hidden;
+                &:nth-child(1){
+                    color: white;
+                    font-size: 18px;
+                    position: relative;
+                    &::before{
+                        width: 100%;
+                        height: 90%;
+                        top: 0;
+                        left: 0;
+                        content: '';
+                        position: absolute;
+                        border-bottom: 2px solid #00A799;
+                        transform: translateX(-95%);
+                    }  
+                }
+                a{
+                    color: #ffffffc9;
+                }
+            }
+        }
+
+        .block-1{
+            .lang{
+                display: flex;
+                flex-direction: column;
+                .lang-icon{
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .exit-logo {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-around;
+        .site-name{
+            z-index: 1;
+            font-size: 32px;
+            color: white;
+            .top-text{
+                margin-bottom: -25px;
+                font-weight: 900;
+            }
+            .bottom-text{
+                font-weight: 900;
+                display: flex;
+                align-items: flex-start;
+                padding-left: 8 px;
+                .ampersand{
+                    font-size: 14px;
+                    font-weight: 300;
+                    display: inline-block;
+                    margin-top: 10px;
+                    color: #AB6C0D;
+                }
+            }
+        }
+
+        .footer-divider{
+            z-index: 1;
+            background-color: #00A799;
+            height: 1px;
+            border: none;
+            width: 70%;
+        }
+    }
+
+    .privacy{
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        p{
+            z-index: 1;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-media-icons{
+            z-index: 1;
+            i{
+                padding-right: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.material-icons.md-36{ font-size: 10px; padding-left: 20px;}
+
+@media screen and (max-width: 768px){
+    footer{
+        .exit-logo{
+            margin-top: 40px;
+        }
+
+        #footer{
+            .block-1{
+                .lang{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    footer{
+        background-size: contain;
+    }
+}

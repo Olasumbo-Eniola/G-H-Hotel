@@ -1,1 +1,1 @@
-# AwesomeHotel
+# G&H Hotel

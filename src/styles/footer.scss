@@ -56,6 +56,24 @@ footer{
                 }
             }
         }
+
+        .block-1{
+            .lang{
+                display: flex;
+                flex-direction: column;
+                .lang-icon{
+                    width: 30px;
+                    height: 30px;
+                    margin-bottom: 10px;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 
     .exit-logo {
@@ -125,6 +143,14 @@ footer{
     footer{
         .exit-logo{
             margin-top: 40px;
+        }
+
+        #footer{
+            .block-1{
+                .lang{
+                    flex-direction: row;
+                }
+            }
         }
     }
 }

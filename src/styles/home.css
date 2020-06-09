@@ -21,7 +21,7 @@ li{
 }
 /* Header Section */
 .all-content{
-    background: url(/Images/headerBack.png) center center/cover no-repeat;
+    background: url(../images/headerBack.png) center center/cover no-repeat;
     height: 90vh;
     padding-top: 50px;
     margin-bottom: 30px;
@@ -211,16 +211,16 @@ main .facilities-header,
 
 
 .rooms .room-content1{
-    background: url(/Images/classicRoom.png) center center/cover;
+    background: url(../images/classicRoom.png) center center/cover;
 }
 .rooms .room-content2{
-    background: url(/Images/theViewRoom.png) center center/cover;
+    background: url(../images/theViewRoom.png) center center/cover;
 }
 .rooms .room-content3{
-    background: url(/Images/deluxeRoom.png) center center/cover;
+    background: url(../images/deluxeRoom.png) center center/cover;
 }
 .rooms .room-content4{
-    background: url(/Images/classicRoom.png) center center/cover;
+    background: url(../images/classicRoom.png) center center/cover;
 }
 
 .experience{

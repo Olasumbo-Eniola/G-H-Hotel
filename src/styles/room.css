@@ -1,0 +1,627 @@
+/* First image you see when you enter the page */
+.landing-area .landing-image {
+    width: 100%;
+    height: 731px;
+    background: url(../images/rooms/rooms.png);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    /* identical to box height */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.0059em;
+    color: #FFFFFF;
+}
+
+.landing-image .content h4 {
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    left: 654px;
+    top: 196px;
+    font-size: 38px;
+    line-height: 45px;
+}
+
+.landing-image .content p {
+    position: absolute;
+    width: 299px;
+    height: 19px;
+    left: 571px;
+    top: 261px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.landing-image .logos{
+    position: absolute;
+    width: 100%;
+    height: 117px;
+    top: 613px;
+    left: 0;
+    opacity: .3;
+    background: #FFFFFF;
+}
+
+.logos .hospitality {
+    background: url(../images/institute.png);
+    position: absolute;
+    width: 269px;
+    height: 81px;
+    left: 104px;
+    top: 10px;
+}
+
+.logos .world {
+    background: url(../images/award.png) no-repeat;
+    position: absolute;
+    width: 167px;
+    height: 97.5px;
+    left: 590px;
+    top: 10px;
+}
+
+.logos .forbes {
+    position: absolute;
+    width: 380px;
+    height: 95.16px;
+    left: 1060px;
+    top: 10px;
+    background: url(../images/Mask\ Group.png);
+}
+
+/* Common code for all the sections below the landing area */
+.classic-room, .deluxe-room, .view-room, .executive-room, .view-room-2, .standard-room {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.standard-room {
+    margin: 32px 0 164px 0;
+}
+
+.view-room-2, .view-room {
+    margin-top: 44px;
+}
+
+.executive-room {
+    margin-top: 54px;
+}
+
+/* The features section starts here */
+/* Classic room section */
+.classic-room .image-section {
+    position: relative;
+    top: 35px;
+    left: 106px;
+    width: 521px;
+    height: 339px;
+    background: url(../images/rooms/classic-room.png) no-repeat;
+}
+
+.classic-room .image-content {
+    position: relative;
+    width: 514px;
+    height: 31px;
+    left: 7px;
+    top: 103px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.classic-room .image-content .room {
+    margin-top: 5px;
+    padding-right: 58px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    line-height: 21px;
+    
+}
+
+.classic-room .payment {
+    position: relative;
+    top: 229px;
+    padding-right: 42px;
+    height: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    float: right;
+}
+
+.classic-room .reviews {
+    position: relative;
+    top: 252px;
+    float: right;
+    left: 80px;
+}
+
+ .classic-room .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 129px;
+    width: 50px;
+    height: 20px;
+}
+
+.classic-room .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 230px;
+    width: 50px;
+    height: 20px;
+
+}
+
+.classic-room .features {
+    position: absolute;
+    width: 298px;
+    height: 174px;
+    right: 111px;
+    top: 825px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #072522;
+}
+
+/* Deluxe room section */
+
+.deluxe-room .features {
+    position: relative;
+    top: 75px;
+    left: 105px;
+    text-align: left;
+    width: 219px;
+    height: 182px;
+    color: #072522;
+}
+
+.deluxe-room button {
+    position: relative;
+    right: 85px;
+}
+
+.deluxe-room button .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.deluxe-room .image-section {
+    background: url(../images//rooms/deluxe-room.png) no-repeat;
+    position: relative;
+    width: 521px;
+    height: 339px;
+    top: 81px;
+    right: 106px;
+}
+
+.deluxe-room .image-content {
+    position: relative;
+    width: 515px;
+    height: 31px;
+    left: 6px;
+    top: 131.35px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.deluxe-room .image-content .room {
+    padding-top: 5px;
+    padding-left: 28px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.deluxe-room .payment {
+    position: relative;
+    top: 237px;
+    float: left;
+    padding-left: 48px;
+}
+
+.deluxe-room .reviews {
+    position: relative;
+    top: 260px;
+    float: left;
+    right: 60px;
+}
+
+.deluxe-room .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 285px;
+    margin-left: 48px;
+    width: 50px;
+    height: 20px;
+}
+
+.deluxe-room .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 265px;
+    margin-left: 99px;
+    width: 50px;
+    height: 20px;
+}
+
+/* View room section */
+
+.view-room .image-section {
+    background: url(../images/rooms/view-room.png) no-repeat;
+    position: relative;
+    top: 81px;
+    left: 106px;
+    width: 521px;
+    height: 339px;
+}
+
+.view-room .image-content {
+    position: relative;
+    width: 514px;
+    height: 31px;
+    left: 7px;
+    top: 103px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.view-room .image-content .room {
+    margin-top: 5px;
+    padding-right: 58px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    line-height: 21px;
+    
+}
+
+.view-room .payment {
+    position: relative;
+    top: 229px;
+    padding-right: 42px;
+    height: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    float: right;
+}
+
+.view-room .reviews {
+    position: relative;
+    top: 252px;
+    float: right;
+    left: 80px;
+}
+
+ .view-room .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 129px;
+    width: 50px;
+    height: 20px;
+}
+
+.view-room .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 230px;
+    width: 50px;
+    height: 20px;
+
+}
+
+.view-room .features {
+    position: absolute;
+    width: 298px;
+    height: 201px;
+    right: 111px;
+    top: 1589px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #072522;
+}
+
+/* Executive room section */
+
+.executive-room .features{
+    position: relative;
+    top: 56px;
+    left: 105px;
+    text-align: left;
+    width: 219px;
+    height: 182px;
+    color: #072522;
+}
+
+.executive-room button {
+    position: relative;
+    right: 85px;
+}
+
+.executive-room button .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.executive-room .image-section {
+    background: url(../images/rooms/executive-room.png) no-repeat;
+    position: relative;
+    width: 521px;
+    height: 339px;
+    top: 57px;
+    right: 106px;
+}
+
+.executive-room .image-content {
+    position: relative;
+    width: 515px;
+    height: 31px;
+    left: 6px;
+    top: 131.35px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.executive-room .image-content .room {
+    padding-top: 5px;
+    padding-left: 28px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.executive-room .payment {
+    position: relative;
+    top: 237px;
+    float: left;
+    padding-left: 48px;
+}
+
+.executive-room .reviews {
+    position: relative;
+    top: 260px;
+    float: left;
+    right: 60px;
+}
+
+.executive-room .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 285px;
+    margin-left: 48px;
+    width: 50px;
+    height: 20px;
+}
+
+.executive-room .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 265px;
+    margin-left: 99px;
+    width: 50px;
+    height: 20px;
+}
+
+/* The second view room section */
+
+.view-room-2 .image-section {
+    background: url(../images/rooms/view-room-2.png) no-repeat;
+    position: relative;
+    top: 44px;
+    left: 106px;
+    width: 521px;
+    height: 339px;
+}
+
+.view-room-2 .image-content {
+    position: relative;
+    width: 514px;
+    height: 31px;
+    left: 7px;
+    top: 103px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.view-room-2 .image-content .room {
+    margin-top: 5px;
+    padding-right: 58px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    line-height: 21px;
+    
+}
+
+.view-room-2 .payment {
+    position: relative;
+    top: 229px;
+    padding-right: 42px;
+    height: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    float: right;
+}
+
+.view-room-2 .reviews {
+    position: relative;
+    top: 252px;
+    float: right;
+    left: 80px;
+}
+
+ .view-room-2 .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 129px;
+    width: 50px;
+    height: 20px;
+}
+
+.view-room-2 .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 277px;
+    float: right;
+    left: 230px;
+    width: 50px;
+    height: 20px;
+
+}
+
+.view-room-2 .features {
+    position: absolute;
+    width: 298px;
+    height: 201px;
+    right: 106px;
+    top: 2325px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #072522;
+}
+
+/* Standard room section */
+
+.standard-room .features{
+    position: relative;
+    top: 56px;
+    left: 105px;
+    text-align: left;
+    width: 219px;
+    height: 182px;
+    color: #072522;
+}
+
+.standard-room button {
+    position: relative;
+    right: 85px;
+}
+
+.standard-room button .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.standard-room .image-section {
+    background: url(../images/rooms/standard-room.png) no-repeat;
+    position: relative;
+    width: 521px;
+    height: 339px;
+    top: 57px;
+    right: 105px;
+}
+
+.standard-room .image-content {
+    position: relative;
+    width: 515px;
+    height: 31px;
+    left: 6px;
+    top: 131.35px;
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.standard-room .image-content .room {
+    padding-top: 5px;
+    padding-left: 28px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.standard-room .payment {
+    position: relative;
+    top: 237px;
+    float: left;
+    padding-left: 48px;
+}
+
+.standard-room .reviews {
+    position: relative;
+    top: 260px;
+    float: left;
+    right: 60px;
+}
+
+.standard-room .stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 285px;
+    margin-left: 48px;
+    width: 50px;
+    height: 20px;
+}
+
+.standard-room .stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 265px;
+    margin-left: 99px;
+    width: 50px;
+    height: 20px;
+}
+
+.features button {
+    margin: 26px 0 41px 81px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 47px;
+    width: 219.09px;
+    height: 48px;
+    outline: 0;
+    background: #00A799;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+ button .arrow-icon {
+    background: url(../images/rooms/Polygon\ 1.png);
+    width: 16px;
+    height: 15px;
+}
+
+button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

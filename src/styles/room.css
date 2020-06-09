@@ -1,0 +1,173 @@
+.landing-area .landing-image {
+    width: 100%;
+    height: 731px;
+    background: url(../images/rooms/rooms.png);
+}
+
+.landing-image .logos{
+    position: absolute;
+    width: 100%;
+    height: 117px;
+    top: 613px;
+    left: 0;
+    opacity: .3;
+    background: #FFFFFF;
+}
+
+.logos .hospitality {
+    background: url(../images/institute.png);
+    position: absolute;
+    width: 269px;
+    height: 81px;
+    left: 104px;
+    top: 10px;
+}
+
+.logos .world {
+    background: url(../images/award.png) no-repeat;
+    position: absolute;
+    width: 167px;
+    height: 97.5px;
+    left: 590px;
+    top: 10px;
+}
+
+.logos .forbes {
+    position: absolute;
+    width: 380px;
+    height: 95.16px;
+    left: 1060px;
+    top: 10px;
+    background: url(../images/Mask\ Group.png);
+}
+
+.classic-room {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.classic-room .image-section {
+    margin: 35px 0 40px 104px;
+    width: 521px;
+    height: 339px;
+    background: url(../images/rooms/classic-room.png);
+}
+
+.classic-room .image-content {
+    position: absolute;
+    width: 514px;
+    height: 31px;
+    left: 110px;
+    top: 868px;
+
+    background: rgba(15, 95, 92, 0.2);
+}
+
+.classic-room .image-content .room {
+    margin-top: 5px;
+    padding-right: 58px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    line-height: 21px;
+    
+}
+
+.classic-room .payment {
+    position: relative;
+    top: 259px;
+    padding-right: 42px;
+    height: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    float: right;
+}
+
+.classic-room .reviews {
+    position: relative;
+    top: 282px;
+    float: right;
+    left: 80px;
+}
+
+.stars .green {
+    background: url(../images/rooms/Shape\ Copy\ 16.png);
+    background-repeat: space;
+    position: relative;
+    top: 307px;
+    float: right;
+    left: 129px;
+    width: 50px;
+    height: 20px;
+}
+
+.stars .white {
+    background: url(../images/rooms/Shape\ white.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 307px;
+    float: right;
+    left: 230px;
+    width: 50px;
+    height: 20px;
+
+}
+
+.features {
+    position: absolute;
+    right: 111px;
+    top: 816px;
+    width: 298px;
+    height: 174px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #072522;
+}
+
+.deluxe-room .features {
+    position: absolute;
+    width: 219px;
+    height: 182px;
+    left: 105px;
+    top: 1144px;
+}
+
+.deluxe-room .image-section {
+    background: url(../images//rooms/deluxe-room.png) no-repeat;
+    width: 521px;
+    height: 339px;
+    position: relative;
+    left: 900px;
+}
+
+.features button {
+    margin: 26px 0 41px 81px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 47px;
+    width: 219.09px;
+    height: 48px;
+    outline: 0;
+    background: #00A799;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button .arrow-icon {
+    background: url(../images/rooms/Polygon\ 1.png);
+    width: 16px;
+    height: 15px;
+}
+
+button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

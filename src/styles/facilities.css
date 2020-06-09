@@ -1,0 +1,124 @@
+
+.text{
+ 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+h3{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: normal;
+}
+.myImg{
+    object-fit: contain;
+   height: 731px;
+   width: 100%;
+   margin-top: -3.7%;
+}
+.img-nav{
+    position: absolute;
+    bottom: 9px;
+    left: -0.1%;
+    background-color: #ffffff;
+    opacity: 0.3;
+    width: 100%;
+    padding-right: 23px;
+    margin-bottom: -1%;
+    padding-bottom: 10px;
+}
+.lil-img{
+    float: left;
+  width: 30%;
+  margin: auto;
+  margin-top: 6px;
+  margin-left: 3%;
+}
+.overview h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+    line-height: 37px;
+}
+.overview-text{
+    width: 829px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin: auto;
+    line-height: 19px;
+    letter-spacing: 0.0059em;
+    margin-top: 2%;
+
+}
+.Small-txt{
+    position: absolute; 
+   margin-left: -22%;
+   width: 238px;
+    margin-top: 6%;
+    background-color: white;
+    padding: 10px 37px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+.smaller-img {
+    float: left;
+
+    width: 30%;
+    margin: auto;
+    margin-top: 6px;
+    margin-left: 3%;
+}
+.images::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.images{
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+}
+
+@media only screen and (max-width: 768px){
+    .head{
+      
+        height: 700px;
+    }
+    .myImg{
+        width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: -17%;
+    }
+    .img-nav{
+        position: absolute;
+        width: 100%;
+    }
+    .lil-img img{
+      
+        width:100px;
+        height: 100px;
+    }
+    .overview-text{
+        width: 100%;
+    }
+    .smaller-img{
+        width: 100%;
+    }
+    .Small-txt{
+       position: absolute;
+       margin-top: 25%;
+       margin-left: -20%;
+    }
+}

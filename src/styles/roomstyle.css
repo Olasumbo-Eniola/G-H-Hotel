@@ -1,0 +1,92 @@
+#rectangle-3 {
+     min-width: auto;
+     height: 687px;
+
+
+     background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%), url(../images/rooms.png);
+}
+
+body {
+    background-color: #F2F2F2;
+
+}
+.rectangle-6 {
+    position: absolute;
+    width: auto;
+    height: 117px;
+    top: 570px;
+
+    background: #FFFFFF;
+    opacity: 0.3;
+}
+
+
+#main-heading {
+    position: absolute;
+    width: 383px;
+    height: 19px;
+    left: 595px;
+    top: 261px;
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.0059em;
+
+    color: #FFFFFF;
+
+}
+
+#main-heading h4 {
+    font-size: 38px;
+    width: 133px;
+    height: 45px;
+    padding-bottom: 20px;
+
+}
+
+#section-2 {
+    padding-left: 104px;
+    padding-right: 106px;
+}
+
+
+#main-heading h5 {
+   font-size: 16px;
+   height: 19px;
+   width: 333px;
+   position: absolute;
+   top: 20px;
+   left: -53px;
+}
+
+.room1{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 965px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 80px;
+    padding-top: 60px;
+    font-family: 'roboto';
+}
+
+.big-button{
+background-color:#00A799;
+border-radius: 50px;
+border: solid 1px rgb(250, 247, 247) !important;
+color: #FFFFFF;
+font-family: 'roboto';
+font-size: 24px;
+line-height: 28px;
+position: absolute;
+width: 219.09px;
+height: 48px;
+top: 980px;
+left: 970px;
+text-align: center;
+}
+

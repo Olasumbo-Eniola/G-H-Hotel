@@ -1,9 +1,14 @@
+
+const menuActivator = document.querySelector('.activator'); //Selects the class div with textcontent 'Menu'
+const navigation = document.querySelector('.navigation'); //nav class 
+
 // Menu for android 
 
 const menuActiviator = document.querySelector('.activator');
 const navigation = document.querySelector('.navigation');
+
 const menuIcon = document.querySelector('.menu-icon')
-menuActiviator.addEventListener('click', ()=>{
+menuActivator.addEventListener('click', ()=>{
     navigation.classList.toggle('active')
     menuIcon.textContent = menuIcon.textContent == 'keyboard_arrow_right' ? 'keyboard_arrow_left' : 'keyboard_arrow_right'
 })

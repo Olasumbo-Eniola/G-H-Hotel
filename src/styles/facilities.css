@@ -34,7 +34,7 @@ h3 {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    /* background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%); */
     z-index: 1;
     content: '';
     top: 0;
@@ -44,6 +44,7 @@ h3 {
 
 .head .text h3 {
     font-size: 55px;
+    margin-bottom: 5px;
 }
 
 .head .text p {
@@ -160,7 +161,18 @@ h3 {
         height: 350px;
     }
 
-    .head .text {
+    .text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text h3 {
+        font-size: 30px !important;
+    }
+
+    .head .text p {
         display: none;
     }
 

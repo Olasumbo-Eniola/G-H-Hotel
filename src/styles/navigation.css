@@ -8,6 +8,8 @@
   font-family: 'Nunito', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: auto;
+  
 }
 
 * a {
@@ -32,7 +34,9 @@
   position: fixed;
   z-index: 5;
   color: white;
-  
+  top: 0;
+}
+
 }
 
 #header .site-name {
@@ -89,7 +93,7 @@
   font-size: 18px;
   border-radius: 50px;
   -webkit-transition: .2s all ease-out;
-  transition: .2s all ease-out;
+  transition: .1s all ease-out;
   color: white;
 }
 
@@ -132,7 +136,7 @@
     left: 0;
     width: 50%;
     height: 100vh;
-    background: white;
+    background:inherit;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     -webkit-transition: .4s transform ease-out;

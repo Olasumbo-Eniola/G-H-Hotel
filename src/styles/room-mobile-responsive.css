@@ -19,10 +19,286 @@
     .landing-image .content {
         display: none;
     }
+
+    .hotel-recognition:after {
+        height: 48px;
+    }
+
+    .hotel-recog-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hotel-img-1 {
+        width: 86px;
+        height: 26px;
+        margin-left: -80px;
+        margin-right: 80px;
+    }
+
+    .hotel-img-2 {
+        width: 51px;
+        height: 29px;
+        margin-right: 60px;
+    }
+
+    .hotel-img-3 {
+        width: 129.41px;
+        height: 32.21px;
+    }
+
+    .features-section {
+        position: relative;
+        top: 40px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-style: normal;
+        color: #0F5F5C;
+    }
+
+    .features-section .title {
+        position: relative;
+        width: 51px;
+        height: 19px;
+        left: 30px;
+        top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .classic-room {
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+
+    .classic-room .image-section, 
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        top: 0;
+        left: 0;
+        width: 121px;
+        height: 78.49px;
+        font-size: 8px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .classic-room .image-content, 
+    .deluxe-room .image-content,
+    .view-room .image-content,
+    .executive-room .image-content,
+    .view-room-2 .image-content,
+    .standard-room .image-content{
+        display: none;
+    }
+
+    .classic-room .payment,
+    .deluxe-room .payment,
+    .view-room .payment,
+    .executive-room .payment,
+    .view-room-2 .payment,
+    .standard-room .payment {
+        position: absolute;
+        height: 9px;
+        left: 8px;
+        top: 46px;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .classic-room .reviews,
+    .deluxe-room .reviews,
+    .view-room .reviews,
+    .executive-room .reviews,
+    .view-room-2 .reviews,
+    .standard-room .reviews {
+        position: absolute;
+        height: 9px;
+        left: 8px;
+        top: 56px;
+
+    }
+
+    .classic-room .stars .green,
+    .deluxe-room .stars .green,
+    .view-room .stars .green,
+    .executive-room .stars .green,
+    .view-room-2 .stars .green,
+    .standard-room .stars .green{
+        background: url(../images/rooms/Shape_Copy_16_1_50.png);
+        position: absolute;
+        top: 66px;
+        left: 8px;
+        width: 24px;
+        height: 6px;
+    }
+
+    .classic-room .stars .white,
+    .deluxe-room .stars .white,
+    .view-room .stars .white,
+    .executive-room .stars .white,
+    .view-room-2 .stars .white,
+    .standard-room .stars .white {
+        background: url(../images/rooms/Shape_white_50.png);
+        position: relative;
+        top: 30px;
+        left: 33px;
+        width: 6px;
+        height: 6px;
+    
+    }
+
+    .classic-room .features, 
+    .deluxe-room .features,
+    .view-room .features,
+    .executive-room .features,
+    .view-room-2 .features,
+    .standard-room .features{
+        width: 117px;
+        height: 81px;
+        left: 134px;
+        top: 0px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 9px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .features button {
+        display: none;
+    }
+
+    .classic-room .mobile-button,
+    .view-room .mobile-button,
+    .view-room-2 .mobile-button{
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        width: 54px;
+        height: 29px;
+        right: 54px;
+        top: 26px;
+        background: #00A799;
+        color: #FFFFFF;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .deluxe-room {
+        margin: 0;
+        position: relative;
+        top: 28.51px;
+        left: 30px;
+    }
+
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 290px;
+        top: 0;
+        width: 121px;
+        height: 78.49px;
+        font-size: 8px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .deluxe-room .mobile-button,
+    .executive-room .mobile-button,
+    .standard-room .mobile-button {
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        width: 54px;
+        height: 29px;
+        left: 125px;
+        top: 26px;
+        background: #00A799;
+        color: #FFFFFF;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .deluxe-room .payment,
+    .executive-room .payment,
+    .standard-room .payment {
+        padding-left: 0;
+    }
+
+    .deluxe-room .stars .green, 
+    .deluxe-room .stars .white,
+    .executive-room .stars .green, 
+    .executive-room .stars .white,
+    .standard-room .stars .green, 
+    .standard-room .stars .white{
+        margin-left: 0;
+    }
+
+    .view-room {
+        margin: 0;
+        position: relative;
+        top: 38.51px;
+        left: 30px;
+    }
+
+    .executive-room {
+        margin: 0;
+        position: relative;
+        top: 48.51px;
+        left: 30px;
+    }
+
+    .view-room-2 {
+        margin: 0;
+        position: relative;
+        top: 58.51px;
+        left: 30px;
+    }
+
+    .standard-room {
+        margin-top: 0;
+        position: relative;
+        top: 68.51px;
+        left: 30px;
+    }
+
 }
 
-@media screen and (min-width: 500px){
-    .hotel-recognition-mobile {
+@media screen and (min-width: 500px) {
+    .features-section .title {
+        display: none;
+    }
+
+    .mobile-button {
         display: none;
     }
 }

@@ -11,3 +11,5 @@ Home page - @femiyhogurt and @Ryan
 Facilities page - @SavageCodes and @tobyCodes
 
 Navigation bar and footer - @Tenotea
+
+Contact page - @Adessica

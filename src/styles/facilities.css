@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100% !important;
+    overflow-x: hidden;
+}
 .text{
- 
     position: absolute;
     top: 45%;
     left: 50%;
@@ -13,30 +18,55 @@ h3{
     font-size: 38px;
     font-weight: normal;
 }
-.myImg{
-    object-fit: contain;
-   height: 731px;
-   width: 100%;
-   margin-top: -3.7%;
+
+/* HEADER START  */
+.head{
+    background: url(../images/Hero\ img.png) center center/cover no-repeat;
+    height: 100vh;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.head::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.head .text h3 {
+    font-size: 55px;
+}
+.head .text p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 .img-nav{
     position: absolute;
-    bottom: 9px;
+    bottom: 0;
     left: -0.1%;
     background-color: #ffffff;
     opacity: 0.3;
     width: 100%;
-    padding-right: 23px;
-    margin-bottom: -1%;
-    padding-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 .lil-img{
-    float: left;
-  width: 30%;
-  margin: auto;
-  margin-top: 6px;
-  margin-left: 3%;
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+    
 }
+/* HEADER END  */
+
+/* OVERVIEW START  */
 .overview h2{
     font-family: Roboto;
     font-style: normal;
@@ -44,9 +74,10 @@ h3{
     font-size: 32px;
     text-align: center;
     line-height: 37px;
+    color: #0F5F5C;
 }
 .overview-text{
-    width: 829px;
+    width: 70%;
     text-align: left;
     font-family: Roboto;
     font-style: normal;
@@ -56,69 +87,101 @@ h3{
     line-height: 19px;
     letter-spacing: 0.0059em;
     margin-top: 2%;
-
+    margin-bottom: 5%;
 }
-.Small-txt{
-    position: absolute; 
-   margin-left: -22%;
-   width: 238px;
-    margin-top: 6%;
+
+/* FACILITIES IMAGES START  */
+.smaller-img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.Small-txt {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: fit-content;
     background-color: white;
     padding: 10px 37px;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
     line-height: 19px;
-    
+    text-transform: uppercase;
 }
-.smaller-img {
-    float: left;
 
-    width: 30%;
-    margin: auto;
-    margin-top: 6px;
-    margin-left: 3%;
+.images .smaller-img img {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
 .images::after{
     content: "";
-    clear: both;
-    display: table;
+    
 }
 .images{
-    margin-top: 4%;
-    margin-bottom: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 30px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+@media only screen and (max-device-width : 1024px) {
+    body {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 768px){
     .head{
-      
-        height: 700px;
+        height: 350px;
     }
-    .myImg{
-        width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin-top: -17%;
+    .head .text {
+        display: none;
     }
     .img-nav{
         position: absolute;
         width: 100%;
+        height: 80px;
+        
     }
     .lil-img img{
-      
-        width:100px;
-        height: 100px;
+        justify-content: space-around;
+        width:120px;
+        height: 60px;
     }
     .overview-text{
-        width: 100%;
+        width: 80%;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 500px;
     }
     .smaller-img{
         width: 100%;
+        
     }
-    .Small-txt{
-       position: absolute;
-       margin-top: 25%;
-       margin-left: -20%;
+    .Small-txt {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: fit-content;
+        background-color: white;
+        padding: 10px 30px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 15px;
     }
 }

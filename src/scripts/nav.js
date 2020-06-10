@@ -5,7 +5,7 @@ const navigation = document.querySelector('.navigation');
 const menuIcon = document.querySelector('.menu-icon')
 menuActiviator.addEventListener('click', ()=>{
     navigation.classList.toggle('active')
-    menuIcon.textContent = menuIcon.textContent == 'keyboard_arrow_right' ? 'keyboard_arrow_left' : 'keyboard_arrow_right'
+    menuIcon.textContent = menuIcon.textContent == 'close' ? 'menu' : 'close'
 })
 
 // Active state code. DO NOT EDIT!
@@ -24,7 +24,7 @@ navLinks.forEach( navLink => {
 const header =  document.querySelector('#header')
 window.addEventListener('scroll', ()=>{
     // Change color black to the one that works
-    window.scrollY > 100 ? header.style.backgroundColor = "black" : header.style.backgroundColor = "transparent"
+    window.scrollY > 100 ? header.style.backgroundColor = "#005e57" : header.style.backgroundColor = "transparent"
 })
 
 //header.style.width = window.innerWidth+'px';

@@ -31,6 +31,8 @@
   position: fixed;
   z-index: 5;
   color: white;
+  -webkit-transition: .3s background ease-out;
+  transition: .3s background ease-out;
 }
 
 #header .site-name {

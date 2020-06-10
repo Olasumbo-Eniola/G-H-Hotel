@@ -1,0 +1,41 @@
+.head{
+    background: url(../images/contact.png);
+    height: 100vh;
+    position: relative;
+}
+.img-nav {
+    position: absolute;
+    bottom: 0;
+    left: -0.1%;
+    background-color: #ffffff;
+    opacity: 0.3;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lil-img {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+
+}
+.head .text h3 {
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+}
+
+.head .text p {
+    font-size: 20px;
+}
+.text{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   line-height: 18px;
+}

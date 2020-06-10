@@ -27,7 +27,7 @@ navLinks.forEach( navLink => {
 const header =  document.querySelector('#header')
 window.addEventListener('scroll', ()=>{
     // Change color black to the one that works
-    window.scrollY > 100 ? header.style.backgroundColor = "#0F5F5C;" : header.style.backgroundColor = "transparent"
+    window.scrollY > 100 ? header.style.backgroundColor = "black" : header.style.backgroundColor = "transparent"
 })
 
 //header.style.width = window.innerWidth+'px';

@@ -1,0 +1,28 @@
+@media screen and (max-width: 415px) {
+    .background {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 189px;
+        left: 0;
+        top: 71px;
+        background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    }
+    
+    .landing-area .landing-image {
+        position: relative;
+        width: 100%;
+        height: 190px;
+        left: 0px;
+        top: 70px;
+    }
+    .landing-image .content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .hotel-recognition-mobile {
+        display: none;
+    }
+}

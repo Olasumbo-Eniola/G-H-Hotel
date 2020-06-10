@@ -4,8 +4,7 @@ const navigation = document.querySelector('.navigation'); //nav class
 
 // Menu for android 
 
-const menuActiviator = document.querySelector('.activator');
-const navigation = document.querySelector('.navigation');
+
 
 const menuIcon = document.querySelector('.menu-icon')
 menuActivator.addEventListener('click', ()=>{

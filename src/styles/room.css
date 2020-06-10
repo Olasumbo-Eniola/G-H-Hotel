@@ -106,7 +106,7 @@
     left: 106px;
     width: 521px;
     height: 339px;
-    background: url(../images/room1.png) no-repeat;
+    background: url(../images/room1.png) no-repeat center center/cover;
 }
 
 .classic-room .image-content {
@@ -175,7 +175,7 @@
     width: 298px;
     height: 170px;
     right: 111px;
-    top: 115%;
+    top: 110%;
     text-align: right;
     color: #072522;
     margin-bottom: 5%;
@@ -344,7 +344,7 @@
     width: 298px;
     height: 201px;
     right: 111px;
-    top: 250%;
+    top: 237%;
     line-height: 29px;
     text-align: right;
     color: #072522;
@@ -513,7 +513,7 @@
     width: 298px;
     height: 201px;
     right: 106px;
-    top: 383%;
+    top: 360%;
     text-align: right;
     color: #072522;
     line-height: 29px;
@@ -581,7 +581,7 @@
     position: relative;
     top: 260px;
     float: left;
-    right: 60px;
+    right: 48px;
 }
 
 .standard-room .stars .green {

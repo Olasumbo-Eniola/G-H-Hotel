@@ -1,6 +1,7 @@
 /* Globally set these properties and also for the anchor tags. 
     If you need any of these change, define it explicitly.
  */
+ 
 * {
   margin: 0;
   padding: 0;
@@ -31,8 +32,12 @@
   position: fixed;
   z-index: 5;
   color: white;
+<<<<<<< HEAD
   -webkit-transition: .3s background ease-out;
   transition: .3s background ease-out;
+=======
+  
+>>>>>>> master
 }
 
 #header .site-name {

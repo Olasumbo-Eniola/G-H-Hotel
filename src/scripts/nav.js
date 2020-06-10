@@ -1,9 +1,12 @@
+
+const menuActivator = document.querySelector('.activator'); //Selects the class div with textcontent 'Menu'
+const navigation = document.querySelector('.navigation'); //nav class 
+
 // Menu for android 
 
-const menuActiviator = document.querySelector('.activator');
-const navigation = document.querySelector('.navigation');
+
 const menuIcon = document.querySelector('.menu-icon')
-menuActiviator.addEventListener('click', ()=>{
+menuActivator.addEventListener('click', ()=>{
     navigation.classList.toggle('active')
     menuIcon.textContent = menuIcon.textContent == 'close' ? 'menu' : 'close'
 })
@@ -31,6 +34,7 @@ window.addEventListener('scroll', ()=>{
     window.scrollY > 100 ? header.style.backgroundColor = "#005e57" : header.style.backgroundColor = "transparent"
 })
 
+<<<<<<< HEAD
 
 
 // Back Button
@@ -41,3 +45,6 @@ const backArrow = document.querySelector('.arrow-back') || ''
     })
 }
 
+=======
+//header.style.width = window.innerWidth+'px';
+>>>>>>> master

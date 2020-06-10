@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --dark-green: #072522;
+    --darker-green:  #0F5F5C;
+    --white: #ffffff;
+    --background-color: #f2f2f2;
+    --button-color: #00A799;
+    --background-shading: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    --opacity-green: rgba(15, 95, 92, 0.2);
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* Header Section */
+.all-content{
+    background: url(../images/headerBack.png) center center/cover no-repeat;
+    height: 100vh;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.all-content::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--background-shading);
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+.header-content{
+    position: relative;
+    z-index: 2;
+    margin: auto; 
+}
+.all-content .header-info{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    color: var(--white);
+}
+.all-content .header-info h1{
+    font-size: 55px;
+}
+.all-content .header-info p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.all-content .header-info a{
+    width: 162px;
+    height: 42px;
+    border-radius: 10px;
+    padding: 10px 37px;
+    background: var(--button-color);
+    font-size: 14px;
+    color: var(--white);
+}
+.all-content .header-info a:hover{
+    background: var(--dark-green);
+    color: var(--white);
+}
+
+
+/*  Room Availabity Check */
+.room-check{
+    display: grid;
+    margin: auto;
+    width: 910px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 80px
+}
+.room-check > button{
+    border: none;
+    border-right: 1px solid grey;
+    padding: 10px;
+    color: var(--darker-green);
+    line-height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.room-check i{
+    color: #000000;
+    padding-top: 8px;
+}
+.room-check .book-button{
+    color: var(--white);
+    background: var(--darker-green);
+}
+.room-check a{
+    color: var(--white);
+
+}
+/* Hotel Recognition */
+.hotel-recognition{
+    position: relative;
+}
+.hotel-recognition:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    content: '';
+    background: var(--white);
+    opacity: 0.3;
+}
+.hotel-recog-container{
+    position: relative;
+    z-index: 3;
+    margin: auto 100px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 70px;
+}
+/* Facilities && Rooms && Experience */
+main .facilities-header,
+ .about-us,
+ .room-header,
+ .experience-header,
+ .testimonial-header{
+    text-align: center;
+}
+.line{
+    width: 5%;
+    border-bottom: 2px solid #6FB048;;
+    color: #6FB048;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.facilities-header h1, 
+.about-us h1,
+.room-header h1,
+.experience-header h1,
+.testimonial-header h1{
+    color: var(--darker-green);
+}
+.facilities-header p{
+    color: #83A7A5;
+    margin-bottom: 20px;
+}
+.facilities-img{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+} 
+.about-us{
+    margin: auto;
+    width: 800px;
+}
+
+.about-us p{
+    color: var(--dark-green);
+}
+.rooms, 
+.about-us,
+.facilities{
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+.rooms .rooms-images{
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    margin-top: 20px;
+}
+.rooms .room-content1,
+.rooms .room-content2,
+.rooms .room-content3,
+.rooms .room-content4{
+        position: relative;
+        height: 300px;
+}
+.rooms .fade{
+    background: rgba(15, 95, 92, 0.2);
+    position: absolute;
+    top : 240px;
+    width: 100%;
+    font-size: 8px;        
+}
+.rooms .room-content1 h1,
+.rooms .room-content3 h1{
+    margin-right: 30px;
+    height: 20px;
+    text-align: right;
+}
+.rooms .room-content2 h1,
+.rooms .room-content4 h1{
+    text-align: left;
+    margin-left: 30px;
+    height: 20px;
+}
+
+
+.rooms .room-content1{
+    background: url(../images/classicRoom.png) center center/cover;
+}
+.rooms .room-content2{
+    background: url(../images/theViewRoom.png) center center/cover;
+}
+.rooms .room-content3{
+    background: url(../images/deluxeRoom.png) center center/cover;
+}
+.rooms .room-content4{
+    background: url(../images/classicRoom.png) center center/cover;
+}
+
+.experience{
+    margin: auto;
+    width: 1240px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.experience .experience-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin-top: 30px;
+    color: var(--darker-green);
+    font-size: 14px;
+}
+
+/* Testimonials */
+.testimonial{
+    margin: auto;
+    width: 1240px;
+    margin-top: 50px;
+}
+.testimonial-content{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 90px;
+}
+.testimonial .testimonial-content-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.testimonial .testimonial-info{
+    text-align: center;
+    padding: 30px;
+}
+.testimonial .testimonial-info h6{
+    color: var(--darker-green);
+    font-size: 14px;
+}
+.testimonial .testimonial-info p{
+    color: var(--dark-green);
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+
+
+/* Media Queries */
+/* @media screen and (max-width: 1024px){
+    .all-content{
+        height: 124vh;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    #header{
+        width: 1024px;
+    }
+    .facilities-img{
+        width: 1024px;
+        display: flex;
+        flex-direction: row wrap;
+} 
+}*/

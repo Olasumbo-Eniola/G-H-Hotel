@@ -143,6 +143,7 @@ main .facilities-header,
     margin-bottom: 40px;
     align-items: center;
     justify-content: center;
+    margin: auto;
     
 }
 .facilities-header h1, 

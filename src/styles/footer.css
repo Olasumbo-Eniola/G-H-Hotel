@@ -154,8 +154,14 @@ footer .privacy {
           justify-content: flex-end;
 }
 
-footer .privacy p {
+footer .privacy .privacy-block {
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .privacy .privacy-block p {
   margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +185,10 @@ footer .privacy .social-media-icons i {
   padding-left: 20px;
 }
 
+.material-icons.md-48 {
+  font-size: 36px;
+}
+
 @media screen and (max-width: 768px) {
   footer .exit-logo {
     margin-top: 40px;
@@ -198,6 +208,24 @@ footer .privacy .social-media-icons i {
 @media screen and (max-width: 540px) {
   footer {
     background-size: contain;
+  }
+  footer .privacy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .privacy .privacy-block:nth-child(1) {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

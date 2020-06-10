@@ -9,22 +9,35 @@ menuActiviator.addEventListener('click', ()=>{
 })
 
 // Active state code. DO NOT EDIT!
-
+let borderColors = ['#00A799', '#f8872b', '#2bb7f8', '#f0603d']
 const navLinks = document.querySelectorAll('.navigation .links-list .links');
-navLinks.forEach( navLink => {
+const currentPageName = document.querySelector('.current-page-name')
+navLinks.forEach(( navLink, i) => {
     let currentWindowLocation = window.location.href.toString().toLowerCase();
     let navigationName = navLink.id
+    if(window.innerWidth < 768){
+        navLink.style.borderLeft = `7px solid ${borderColors[i]}`
+    }
+    
     if(currentWindowLocation.includes(navigationName)){
         navLink.classList.add('active')
+        navigationName == 'home' ? '' : currentPageName.textContent = navigationName.replace(/-/, ' ')
     }
 })
-
 
 // Scrolling effect 
 const header =  document.querySelector('#header')
 window.addEventListener('scroll', ()=>{
-    // Change color black to the one that works
     window.scrollY > 100 ? header.style.backgroundColor = "#005e57" : header.style.backgroundColor = "transparent"
 })
 
-//header.style.width = window.innerWidth+'px';
+
+
+// Back Button
+const backArrow = document.querySelector('.arrow-back') || ''
+    if(backArrow){
+        backArrow.addEventListener('click', ()=>{
+        window.history.back()
+    })
+}
+

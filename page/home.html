@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../src/styles/navigation.css">
     <link rel="stylesheet" href="../src/styles/footer.css">
     <title> G-H Hotel </title>
+    <style>
+        @media screen and (max-width: 768px) {
+            #header .site-name{
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -16,7 +23,7 @@
             <h4 class="top-text"> G </h4>
             <h4 class="bottom-text"> <span class="ampersand">&</span> H</h4>
         </div>
-
+        <div class="current-page-name"></div>
         <nav class="navigation">
             <ul class="links-list">
                 <a href="home.html" class="links" id="home"> <li class="link-name"> Home </li> </a>
@@ -25,12 +32,12 @@
                 <a href="contact-us.html" class="links" id="contact-us"> <li class="link-name"> Contact Us </li> </a>
             </ul>
         </nav>
-
         <div id="menu">
             <div class="activator"><i class="material-icons menu-icon"> menu </i> </div>
         </div>
     </header>
     
+
     <footer>
         <div id="footer">
             <div class="block block-1">
@@ -79,14 +86,21 @@
         </div>
 
         <div class="privacy">
-            <p> Terms <i class="material-icons md-36"> fiber_manual_record </i> </p>
-            <p> Privacy <i class="material-icons md-36"> fiber_manual_record </i> </p>
-            <p> Site Map  <i class="material-icons md-36"> fiber_manual_record </i> </p>
-            <div class="social-media-icons">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
+            <div class="privacy-block">
+                <p> Terms <i class="material-icons md-36"> fiber_manual_record </i> </p>
+                <p> Privacy <i class="material-icons md-36"> fiber_manual_record </i> </p>
             </div>
+            
+            <div class="privacy-block">
+                <p> Site Map  <i class="material-icons md-36"> fiber_manual_record </i> </p>
+                <div class="social-media-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+
+            
         </div>
     </footer> 
        <!-- Font awesome sript -->

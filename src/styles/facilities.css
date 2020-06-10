@@ -94,7 +94,7 @@ h3{
 
 @media only screen and (max-width: 400px) {
     body{
-        overflow-x: -moz-hidden-unscrollable;
+        overflow-x: hidden;
     }
     .overview h2{
         margin-top: 3%;

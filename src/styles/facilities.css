@@ -1,68 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.text{
- 
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+.text {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
 }
-h3{
+
+h3 {
     text-align: center;
     font-family: Roboto;
     font-size: 38px;
     font-weight: normal;
-    color: white;
-}
-.myImg{
-    background: url(../images/Hero\ img.png) center center/cover no-repeat;
-    object-fit: contain;
-   height: 100vh;
-   width: 100%;
-   background-color: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
 }
 
-.img-nav{
+/* HEADER START  */
+.head {
+    background: url(../images/Hero\ img.png) center center/cover no-repeat;
+    height: 100vh;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.myImg {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 9px;
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    z-index: 1;
+    content: '';
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.head .text h3 {
+    font-size: 55px;
+}
+
+.head .text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.img-nav {
+    position: absolute;
+    bottom: 0;
     left: -0.1%;
     background-color: #ffffff;
     opacity: 0.3;
     width: 100%;
-    padding-right: 23px;
-    margin-bottom: -1%;
-    padding-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
-.lil-img{
-    float: left;
-  width: 30%;
-  margin: auto;
-  margin-top: 6px;
-  margin-left: 3%;
+
+.lil-img {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+
 }
-.overview h2{
+
+/* HEADER END  */
+
+/* OVERVIEW START  */
+.overview h2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     text-align: center;
     line-height: 37px;
-    margin-top: 4%;
+    color: #0F5F5C;
 }
-.overview-text{
-    width: 829px;
-    text-align: left;
+
+.overview-text {
+    width: 70%;
+    text-align: justify;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     margin: auto;
-    line-height: 19px;
+    line-height: 29px;
     letter-spacing: 0.0059em;
     margin-top: 2%;
+    margin-bottom: 5%;
 
 }
-.Small-txt{
+
+/* FACILITIES IMAGES START  */
+.smaller-img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.Small-txt {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -75,38 +119,87 @@ h3{
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    
 }
-.smaller-img {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
+
 .images .smaller-img img {
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.images{
+
+.images::after {
+    content: "";
+
+}
+
+.images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 30px;
+    grid-gap: 20px 50px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-.images::after{
-    content: "";
-    
-}
-.images{
-    margin-top: 4%;
-    margin-bottom: 4%;
 
+@media only screen and (max-device-width : 1024px) {
+    body {
+        width: 100% !important;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .head {
+        height: 350px;
+    }
+
+    .head .text {
+        display: none;
+    }
+
+    .img-nav {
+        position: absolute;
+        width: 100%;
+        height: 48px;
+
+    }
+
+    .lil-img img {
+        justify-content: space-around;
+        width: 80px;
+        height: 30px;
+    }
+
+    .overview-text {
+        width: 90%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 20px;
+        width: 90%;
+    }
+
+    .smaller-img {
+        width: 100%;
+
+    }
+
+    .Small-txt {
+        padding: 10px 20px;
+        line-height: 15px;
+        font-size: 14px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}

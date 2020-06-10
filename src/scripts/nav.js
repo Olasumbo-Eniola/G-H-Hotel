@@ -34,7 +34,6 @@ window.addEventListener('scroll', ()=>{
     window.scrollY > 100 ? header.style.backgroundColor = "#005e57" : header.style.backgroundColor = "transparent"
 })
 
-<<<<<<< HEAD
 
 
 // Back Button
@@ -45,6 +44,4 @@ const backArrow = document.querySelector('.arrow-back') || ''
     })
 }
 
-=======
 //header.style.width = window.innerWidth+'px';
->>>>>>> master

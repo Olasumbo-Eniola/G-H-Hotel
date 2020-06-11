@@ -1,8 +1,21 @@
 /* First image you see when you enter the page */
-.landing-area .landing-image {
+.background {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
     width: 100%;
-    height: 731px;
-    background: url(../images/rooms/rooms.png);
+    height: 100vh;
+    left: 0;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+}
+.landing-area .landing-image {
+    background: url(../images/rooms.png) center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -16,6 +29,7 @@
 
 .landing-image .content h4 {
     position: absolute;
+    z-index: 1;
     width: 133px;
     height: 45px;
     left: 654px;
@@ -25,6 +39,7 @@
 }
 
 .landing-image .content p {
+    z-index: 1;
     position: absolute;
     width: 299px;
     height: 19px;
@@ -34,42 +49,31 @@
     line-height: 19px;
 }
 
-.landing-image .logos{
-    position: absolute;
+.hotel-recognition{
+    position: relative;
+}
+.hotel-recognition:after{
     width: 100%;
-    height: 117px;
-    top: 613px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
     left: 0;
-    opacity: .3;
-    background: #FFFFFF;
+    content: '';
+    background: var(--white);
+    opacity: 0.3;
+}
+.hotel-recog-container{
+    position: relative;
+    z-index: 3;
+    margin: auto 100px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 70px;
 }
 
-.logos .hospitality {
-    background: url(../images/institute.png);
-    position: absolute;
-    width: 269px;
-    height: 81px;
-    left: 104px;
-    top: 10px;
-}
-
-.logos .world {
-    background: url(../images/award.png) no-repeat;
-    position: absolute;
-    width: 167px;
-    height: 97.5px;
-    left: 590px;
-    top: 10px;
-}
-
-.logos .forbes {
-    position: absolute;
-    width: 380px;
-    height: 95.16px;
-    left: 1060px;
-    top: 10px;
-    background: url(../images/Mask\ Group.png);
-}
 
 /* Common code for all the sections below the landing area */
 .classic-room, .deluxe-room, .view-room, .executive-room, .view-room-2, .standard-room {
@@ -102,7 +106,7 @@
     left: 106px;
     width: 521px;
     height: 339px;
-    background: url(../images/rooms/classic-room.png) no-repeat;
+    background: url(../images/room1.png) no-repeat center center/cover;
 }
 
 .classic-room .image-content {
@@ -171,31 +175,31 @@
     width: 298px;
     height: 174px;
     right: 111px;
-    top: 825px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    top: 110%;
     text-align: right;
     color: #072522;
+    margin-bottom: 5%;
+    line-height: 29px;
 }
 
 /* Deluxe room section */
 
 .deluxe-room .features {
     position: relative;
-    top: 75px;
+    top: 5%;
     left: 105px;
     text-align: left;
     width: 219px;
-    height: 182px;
+    height: 200px;
     color: #072522;
+    line-height: 28px;
+  
 }
 
 .deluxe-room button {
     position: relative;
     right: 85px;
+  
 }
 
 .deluxe-room button .arrow-icon {
@@ -203,7 +207,7 @@
 }
 
 .deluxe-room .image-section {
-    background: url(../images//rooms/deluxe-room.png) no-repeat;
+    background: url(../images/room2.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -266,7 +270,7 @@
 /* View room section */
 
 .view-room .image-section {
-    background: url(../images/rooms/view-room.png) no-repeat;
+    background: url(../images/room3.png) no-repeat center center/cover;
     position: relative;
     top: 81px;
     left: 106px;
@@ -340,26 +344,26 @@
     width: 298px;
     height: 201px;
     right: 111px;
-    top: 1589px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    top: 237%;
+    line-height: 29px;
     text-align: right;
     color: #072522;
+    
 }
 
 /* Executive room section */
 
 .executive-room .features{
     position: relative;
-    top: 56px;
+    top: 5px;
     left: 105px;
     text-align: left;
     width: 219px;
-    height: 182px;
+    height: 176px;
+    line-height: 25px;
     color: #072522;
+    margin-bottom: 3%;
+   
 }
 
 .executive-room button {
@@ -372,7 +376,7 @@
 }
 
 .executive-room .image-section {
-    background: url(../images/rooms/executive-room.png) no-repeat;
+    background: url(../images/room4.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -435,7 +439,7 @@
 /* The second view room section */
 
 .view-room-2 .image-section {
-    background: url(../images/rooms/view-room-2.png) no-repeat;
+    background: url(../images/room5.png) no-repeat center center/cover;
     position: relative;
     top: 44px;
     left: 106px;
@@ -509,26 +513,25 @@
     width: 298px;
     height: 201px;
     right: 106px;
-    top: 2325px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    top: 360%;
     text-align: right;
     color: #072522;
+    line-height: 29px;
 }
 
 /* Standard room section */
 
 .standard-room .features{
     position: relative;
-    top: 56px;
+    top: 5px;
     left: 105px;
     text-align: left;
     width: 219px;
-    height: 182px;
+    height: 176px;
+    line-height: 25px;
     color: #072522;
+    margin-bottom: 3%;
+  
 }
 
 .standard-room button {
@@ -541,7 +544,7 @@
 }
 
 .standard-room .image-section {
-    background: url(../images/rooms/standard-room.png) no-repeat;
+    background: url(../images/room6.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -578,7 +581,7 @@
     position: relative;
     top: 260px;
     float: left;
-    right: 60px;
+    right: 48px;
 }
 
 .standard-room .stars .green {
@@ -610,8 +613,12 @@
     height: 48px;
     outline: 0;
     background: #00A799;
+    color: white;
     border-radius: 50px;
     cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
  button .arrow-icon {

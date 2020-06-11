@@ -22,7 +22,7 @@ li{
 /* Header Section */
 .all-content{
     background: url(/Images/headerBack.png) center center/cover no-repeat;
-    height: 93vh;
+    height: 102vh;
     padding-top: 50px;
     margin-bottom: 30px;
     position: relative;
@@ -231,11 +231,14 @@ main .facilities-header,
 }
 .experience .experience-content{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
     margin-top: 30px;
     color: var(--darker-green);
     font-size: 14px;
+}
+.experience .experience-content img{
+        margin-bottom: 20px;
 }
 
 /* Testimonials */
@@ -271,21 +274,340 @@ main .facilities-header,
 }
 
 
-
 /* Media Queries */
-/* @media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .all-content{
-        height: 124vh;
+        background: url(/Images/headerBack.png) center center/cover no-repeat;
+        height: 131vh;
         padding-top: 50px;
         margin-bottom: 30px;
         position: relative;
-    }
-    #header{
         width: 1024px;
     }
     .facilities-img{
         width: 1024px;
-        display: flex;
-        flex-direction: row wrap;
-} 
-}*/
+     
+    } 
+    .testimonial{
+        width: 1024px;
+        margin: auto 30px;
+        
+    }
+    .testimonial-content{
+        grid-gap: 50px;
+    }
+    .testimonial .testimonial-info h6{
+        color: var(--darker-green);
+        font-size: 14px;
+    }
+    .testimonial .testimonial-info p{
+        margin-bottom: 10px;
+    }
+    .experience{
+        width: 1024px;
+        margin: auto 50px;
+        
+    }
+    .experience .experience-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .all-content{
+        width: 768px;
+        height: 136vh;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    /*  Room Availabity Check */
+    .room-check{
+        margin: auto 10px;
+        width: 768px;
+        grid-gap: 0px;
+        
+    }
+    .room-check > button{
+        border: none;
+        border-right: 1px solid grey;
+        padding: 15px;
+        color: var(--darker-green);
+        font-size: 15px;
+        border-radius: 5px;
+        width: 150px;
+    }
+
+    /* Hotel Recognition */
+
+    .hotel-recog-container{
+        margin: auto 50px;
+        grid-gap: 30px;
+    }
+    .facilities-img{
+       width: 768px;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-gap: 20px;
+    } 
+    .facilities-img img{
+        width: 230px;
+    }
+    .about-us{
+        margin: auto;
+        width: 700px;
+    }
+    .testimonial{
+        width: 768px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: auto 30px;
+    } 
+    .experience{
+        width: 768px;
+        margin: auto 10px;
+        
+    }
+    .testimonial-content{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+    .testimonial .testimonial-info h6{
+        color: var(--darker-green);
+        font-size: 14px;
+    }
+    .testimonial .testimonial-info p{
+        margin-bottom: 10px;
+    }
+    
+    .experience .experience-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media screen and (max-width:425px){
+    .all-content{
+        width: 425px;
+        height: 100vh;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .all-content .header-info{
+        padding-top: 20px;
+        margin-top: 120px;
+       
+    }
+    .all-content .header-info h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .all-content .header-info p{
+        font-size: 13px;
+    }
+    /*  Room Availabity Check */
+    .room-check{
+        display: none;
+    }
+    
+    /* Hotel Recognition */
+    .hotel-recognition{
+        margin-top: 135px;
+    }
+    .hotel-recog-container{
+       margin-top: 420px;
+       width: 425px;
+       margin: auto 10px;
+        grid-gap: 20px;
+    }
+    .hotel-recog-container img{
+        width: 90%;
+    }
+    .facilities-img{
+        width: 425px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto 80px;
+     } 
+     
+    .testimonial{
+        width: 425px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: auto 5px;
+    } 
+    .testimonial .testimonial-content-info{
+        display: grid;
+       grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 20px;
+    }
+    .testimonial .testimonial-content-info img{
+        margin: auto 100px;
+    }
+    .experience{
+        width: 425px;
+        margin: auto 10px;
+        text-align: center;
+        
+    }
+    .experience .experience-content{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto 100px;
+        grid-gap: 50px;
+        
+    }
+    .rooms .rooms-images{
+        grid-template-columns: repeat(1,2fr);
+    }
+    .about-us{
+        margin: auto 2px;
+        width: 425px;
+        padding-top: 40px;
+    }
+    .about-us p{
+        margin: auto 40px;
+       font-size: 12px;
+       margin-bottom: 10px;
+
+    }
+}
+@media screen and (max-width:375px){
+    .all-content{
+        width: 375px;
+        height: 94vh;
+        
+    }
+    .all-content .header-info{
+        margin-top: 100px;
+    }
+    /* Hotel Recognition */
+    .hotel-recognition{
+        margin-top: 140px;
+    }
+    .hotel-recog-container{
+       width: 375px;
+       margin-top: 400px;
+       margin: auto 10px;
+       grid-gap: 20px;
+    }
+    .hotel-recog-container img{
+        width: 87%;
+    }
+    .facilities-img{
+        width: 375px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto 50px;
+     } 
+     
+    .testimonial{
+        width: 375px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: auto 5px;
+    } 
+    .testimonial .testimonial-content-info{
+        display: grid;
+       grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 20px;
+    }
+    .testimonial .testimonial-content-info img{
+        margin: auto 100px;
+    }
+    .experience{
+        width: 375px;
+        margin: auto 5px;
+        text-align: center;
+        
+    }
+    .experience .experience-content{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto 5px;
+        grid-gap: 50px;
+        
+    }
+    .rooms .rooms-images{
+        grid-template-columns: repeat(1,2fr);
+    }
+    .about-us{
+        width: 375px;
+    }
+    .about-us p{
+        margin: auto 40px;
+       font-size: 12px;
+       margin-bottom: 10px;
+
+    }
+}
+@media screen and (max-width:320px){
+    .all-content{
+        width: 320px;
+        height: 94vh;
+        
+    }
+    .all-content .header-info{
+        margin-top: 100px;
+    }
+    .all-content .header-info h1{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .all-content .header-info p{
+        font-size: 10px;
+    }
+    
+    /* Hotel Recognition */
+    .hotel-recognition{
+        margin-top: 150px;
+    }
+    .hotel-recog-container{
+       width: 320px;
+       margin-top: 430px;
+       margin: auto 10px;
+       grid-gap: 17px;
+    }
+    .hotel-recog-container img{
+        width: 87%;
+    }
+    .facilities-img{
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto 50px;
+     } 
+     
+    .testimonial{
+        width: 320px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: auto 5px;
+    } 
+    .testimonial .testimonial-content-info{
+        padding: 10px;
+    }
+    .testimonial .testimonial-content-info img{
+        margin: auto 80px;
+    }
+    .experience{
+        width: 320px;        
+    }
+    .about-us{
+        width: 320px;
+    }
+    .about-us p{
+        margin: auto 40px;
+       font-size: 12px;
+       margin-bottom: 10px;
+
+    }
+}
+@media (min-height: 503px) and
+(min-height: 558px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+}

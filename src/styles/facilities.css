@@ -71,6 +71,9 @@ h3 {
 /* HEADER END  */
 
 /* OVERVIEW START  */
+.overview{
+    margin-top: 3%;
+}
 .overview h2 {
     font-family: Roboto;
     font-style: normal;
@@ -214,6 +217,9 @@ h3 {
         width: 100%;
         height: 48px;
 
+    }
+    .text{
+        display: none;
     }
 
     .lil-img img {

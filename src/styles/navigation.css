@@ -125,7 +125,33 @@
 }
 
 /* CSS breakpoint for tablet and mobile */
+@media screen and (max-width: 1024px){
+  #header {
+    width: 1024px;
+    
+  }
+  #header .navigation{
+    width: 50%;
+  }
+  
+  
+  #header .navigation .links-list .links {
+    padding: 7px 15px;
+    margin: 0px 10px;
+    font-size: 18px;
+    border-radius: 50px;
+    -webkit-transition: .2s all ease-out;
+    transition: .2s all ease-out;
+    color: white;
+  }
+}
 @media screen and (max-width: 768px) {
+  #header {
+    width: 768px;
+    background: #0F5F5C;
+    height: 71px;
+    
+  }
   #header .navigation {
     position: fixed;
     top: 0;
@@ -180,5 +206,29 @@
     display: -ms-flexbox;
     display: flex;
   }
+}
+@media screen and (max-width:425px){
+  #header {
+    width: 425px;
+  }
+}
+@media screen and (max-width: 1440px){
+    .all-content{
+        height: 131vh;
+        width: 1440px;
+        
+    }
+}
+@media screen and (max-width:375px){
+  #header {
+    width: 375px;
+  }
+  
+}
+@media screen and (max-width:320px){
+  #header {
+    width: 320px;
+  }
+  
 }
 /*# sourceMappingURL=navigation.css.map */

@@ -232,11 +232,12 @@ main .facilities-header,
 .experience .experience-content{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-top: 10%;
     grid-gap: 50px;
-    margin-top: 30px;
     color: var(--darker-green);
     font-size: 14px;
 }
+
 
 /* Testimonials */
 .testimonial{
@@ -271,20 +272,64 @@ main .facilities-header,
 }
 .facilities-info{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px 10px;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px 10px; 
+  
 
+}
+.facilities-info img{
+    width: 270px;
 }
 
 
 
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-width : 1024px) {
     body {
         width: 100% !important;
-        background-color: chartreuse;
     }
+    .room-check{
+        display: none;
+    }
+    .header-info{
+        position: absolute;
+        left: 17%;
+        top: 10%;
+        
+    }
+    .experience{
+        width: 100%;
+    }
+    
+    .experience .experience-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-left: 10%;
+    }
+    .experience-content-info img{
+        width: 270px;
+    }
+    .facilities-info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+ 
+    }
+    .facilities-img img{
+        width: 190px;
+    }
+    .testimonial{
+        width: 100%;
+         
+     }
+    
+ 
+     .testimonial-content{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         margin: auto;
+     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     #header .site-name{
         display: block;
     }
@@ -293,6 +338,12 @@ main .facilities-header,
         width: 100%;
         height: 48px;
 
+    }
+    .header-info{
+        position: absolute;
+        left: 9%;
+        top: 10%;
+        
     }
 
     .lil-img img {
@@ -317,9 +368,7 @@ main .facilities-header,
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px 10px;
     }
-    .facilities{
-        background-color: yellow;
-    }
+
     .about-us{
         width: 100%;
     }
@@ -348,8 +397,78 @@ main .facilities-header,
     }
     .experience .experience-content{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: auto;
+        margin-top: 5%;
     }
+    .experience-content-info img{
+        width: 400px;
+    }
+    
+    
+}
+@media only screen and (max-widt: 580px){
+   
+    .experience-content-info {
+        text-align: justify;
+        margin: auto;
+    }
+    .experience{
+        width: 100%;
+        
+    }
+    .header-info{
+        position: absolute;
+        left: 17%;
+        top: 10%;
+        
+    }
+    .experience .experience-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-left: 2%;
+    }
+    .experience-content-info img{
+        width: 200px;
+    }
+    
+    
+}
+@media only screen and (max-width: 507px){
+    .facilities-img img{
+        width: 150px;
+        height: 150px;
+    }
+    .facilities-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px 10px;
+    }
+ 
+    .experience{
+        width: 100%;
+        
+    }
+    .experience .experience-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-left: 2%;
+    }
+    .experience-content-info img{
+        width: 230px;
+    }
+    .header-info{
+        position: absolute;
+        left: 1%;
+        top: 10%;
+        font-size: 16px;
+        
+    }
+    
+ 
+    
     
 }

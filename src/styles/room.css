@@ -161,13 +161,13 @@
 .classic-room .features {
     position: absolute;
     width: 298px;
-    height: 174px;
+    height: 170px;
     right: 111px;
     top: 110%;
     text-align: right;
     color: #072522;
     margin-bottom: 5%;
-    line-height: 29px;
+    line-height: 27px !important;
 }
 
 /* Deluxe room section */
@@ -333,7 +333,7 @@
     height: 201px;
     right: 111px;
     top: 227%;
-    line-height: 29px;
+    line-height: 27px !important;
     text-align: right;
     color: #072522;
     

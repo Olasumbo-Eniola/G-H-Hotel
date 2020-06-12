@@ -53,8 +53,7 @@ h3 {
     position: absolute;
     bottom: 0;
     left: -0.1%;
-    background-color: #ffffff;
-    opacity: 0.3;
+    background-color: #ffffff52;
     width: 100%;
     padding: 10px;
     display: flex;
@@ -163,14 +162,14 @@ h3 {
     .img-nav {
         position: absolute;
         width: 100%;
-        height: 48px;
+        height: 100px;
 
     }
 
     .lil-img img {
         justify-content: space-around;
-        width: 80px;
-        height: 30px;
+        width: 150px;
+        height: 70px;
     }
 
     .overview-text {
@@ -213,7 +212,7 @@ h3 {
     .img-nav {
         position: absolute;
         width: 100%;
-        height: 48px;
+        height: 100px;
 
     }
     .text{
@@ -222,7 +221,7 @@ h3 {
 
     .lil-img img {
         justify-content: space-around;
-        width: 80px;
-        height: 30px;
+        width: 140px;
+        height: 70px;
     }
 }

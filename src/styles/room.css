@@ -1,8 +1,18 @@
 /* First image you see when you enter the page */
-.landing-area .landing-image {
-
-    background: url(../images/rooms/rooms.png) center center/cover no-repeat;
+.background {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    width: 100%;
     height: 100vh;
+    left: 0;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+}
+.landing-area .landing-image {
+    background: url(../images/rooms.png) center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
     padding-top: 50px;
     margin-bottom: 30px;
     position: relative;
@@ -19,6 +29,7 @@
 
 .landing-image .content h4 {
     position: absolute;
+    z-index: 1;
     width: 133px;
     height: 45px;
     left: 654px;
@@ -28,6 +39,7 @@
 }
 
 .landing-image .content p {
+    z-index: 1;
     position: absolute;
     width: 299px;
     height: 19px;
@@ -94,7 +106,7 @@
     left: 106px;
     width: 521px;
     height: 339px;
-    background: url(../images/rooms/classic-room.png) no-repeat;
+    background: url(../images/room1.png) no-repeat center center/cover;
 }
 
 .classic-room .image-content {
@@ -167,7 +179,7 @@
     text-align: right;
     color: #072522;
     margin-bottom: 5%;
-    line-height: 27px !important;
+    line-height: 27px;
 }
 
 /* Deluxe room section */
@@ -195,7 +207,7 @@
 }
 
 .deluxe-room .image-section {
-    background: url(../images//rooms/deluxe-room.png) no-repeat;
+    background: url(../images/room2.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -258,7 +270,7 @@
 /* View room section */
 
 .view-room .image-section {
-    background: url(../images/rooms/view-room.png) no-repeat;
+    background: url(../images/room3.png) no-repeat center center/cover;
     position: relative;
     top: 81px;
     left: 106px;
@@ -332,8 +344,8 @@
     width: 298px;
     height: 201px;
     right: 111px;
-    top: 227%;
-    line-height: 27px !important;
+    top: 237%;
+    line-height: 29px;
     text-align: right;
     color: #072522;
     
@@ -364,7 +376,7 @@
 }
 
 .executive-room .image-section {
-    background: url(../images/rooms/executive-room.png) no-repeat;
+    background: url(../images/room4.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -427,7 +439,7 @@
 /* The second view room section */
 
 .view-room-2 .image-section {
-    background: url(../images/rooms/view-room-2.png) no-repeat;
+    background: url(../images/room5.png) no-repeat center center/cover;
     position: relative;
     top: 44px;
     left: 106px;
@@ -501,7 +513,7 @@
     width: 298px;
     height: 201px;
     right: 106px;
-    top: 340%;
+    top: 360%;
     text-align: right;
     color: #072522;
     line-height: 29px;
@@ -532,7 +544,7 @@
 }
 
 .standard-room .image-section {
-    background: url(../images/rooms/standard-room.png) no-repeat;
+    background: url(../images/room6.png) no-repeat center center/cover;
     position: relative;
     width: 521px;
     height: 339px;
@@ -569,7 +581,7 @@
     position: relative;
     top: 260px;
     float: left;
-    right: 60px;
+    right: 48px;
 }
 
 .standard-room .stars .green {

@@ -32,12 +32,9 @@
   position: fixed;
   z-index: 5;
   color: white;
-<<<<<<< HEAD
   -webkit-transition: .3s background ease-out;
   transition: .3s background ease-out;
-=======
   
->>>>>>> master
 }
 
 #header .site-name {

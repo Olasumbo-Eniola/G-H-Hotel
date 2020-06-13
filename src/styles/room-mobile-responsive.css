@@ -1,0 +1,838 @@
+@media screen and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .background {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 189px;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    }
+    
+    .landing-area .landing-image {
+        position: relative;
+        width: 100%;
+        height: 190px;
+        left: 0px;
+        top: 0;
+    }
+    .landing-image .content {
+        display: none;
+    }
+
+    .hotel-recognition:after {
+        height: 48px;
+    }
+
+    .hotel-recog-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hotel-img-1 {
+        width: 86px;
+        height: 26px;
+        margin-left: -80px;
+        margin-right: 80px;
+    }
+
+    .hotel-img-2 {
+        width: 51px;
+        height: 29px;
+        margin-right: 60px;
+    }
+
+    .hotel-img-3 {
+        width: 129.41px;
+        height: 32.21px;
+    }
+
+    .features-section {
+        position: relative;
+        top: 0;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-style: normal;
+        color: #0F5F5C;
+    }
+
+    .features-section .title {
+        position: relative;
+        width: 51px;
+        height: 19px;
+        left: 30px;
+        top: 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .classic-room {
+        position: relative;
+        top: 10px;
+        left: 30px;
+    }
+
+    .classic-room .image-section, 
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        top: 0;
+        left: 0;
+        width: 141px;
+        height: 98.49px;
+        font-size: 8px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .classic-room .image-content, 
+    .deluxe-room .image-content,
+    .view-room .image-content,
+    .executive-room .image-content,
+    .view-room-2 .image-content,
+    .standard-room .image-content{
+        display: none;
+    }
+
+    .classic-room .payment,
+    .deluxe-room .payment,
+    .view-room .payment,
+    .executive-room .payment,
+    .view-room-2 .payment,
+    .standard-room .payment {
+        position: absolute;
+        height: 9px;
+        left: 8px;
+        top: 46px;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .classic-room .reviews,
+    .deluxe-room .reviews,
+    .view-room .reviews,
+    .executive-room .reviews,
+    .view-room-2 .reviews,
+    .standard-room .reviews {
+        position: absolute;
+        height: 9px;
+        left: 8px;
+        top: 56px;
+
+    }
+
+    .classic-room .stars .green,
+    .deluxe-room .stars .green,
+    .view-room .stars .green,
+    .executive-room .stars .green,
+    .view-room-2 .stars .green,
+    .standard-room .stars .green{
+        background: url(../images/rooms/Shape_Copy_16_1_50.png);
+        position: absolute;
+        top: 66px;
+        left: 8px;
+        width: 24px;
+        height: 6px;
+    }
+
+    .classic-room .stars .white,
+    .deluxe-room .stars .white,
+    .view-room .stars .white,
+    .executive-room .stars .white,
+    .view-room-2 .stars .white,
+    .standard-room .stars .white {
+        background: url(../images/rooms/Shape_white_50.png);
+        position: relative;
+        top: 30px;
+        left: 33px;
+        width: 6px;
+        height: 6px;
+    
+    }
+
+    .classic-room .features, 
+    .deluxe-room .features,
+    .view-room .features,
+    .executive-room .features,
+    .view-room-2 .features,
+    .standard-room .features{
+        width: 157px;
+        height: 101px;
+        left: 164px;
+        top: 0px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 11px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .features button {
+        display: none;
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+
+    .classic-room .mobile-button,
+    .view-room .mobile-button,
+    .view-room-2 .mobile-button{
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        width: 64px;
+        height: 34px;
+        right: 100px;
+        top: 26px;
+        background: #00A799;
+        color: #FFFFFF;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .deluxe-room {
+        margin: 0;
+        position: relative;
+        top: 28.51px;
+        left: 30px;
+    }
+
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 342px;
+        top: 0;
+        width: 141px;
+        height: 98.49px;
+        font-size: 8px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .deluxe-room .mobile-button,
+    .executive-room .mobile-button,
+    .standard-room .mobile-button {
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        width: 64px;
+        height: 34px;
+        left: 100px;
+        top: 26px;
+        background: #00A799;
+        color: #FFFFFF;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        outline: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .deluxe-room .payment,
+    .executive-room .payment,
+    .standard-room .payment {
+        padding-left: 0;
+    }
+
+    .deluxe-room .stars .green, 
+    .deluxe-room .stars .white,
+    .executive-room .stars .green, 
+    .executive-room .stars .white,
+    .standard-room .stars .green, 
+    .standard-room .stars .white{
+        margin-left: 0;
+    }
+
+    .view-room {
+        margin: 0;
+        position: relative;
+        top: 38.51px;
+        left: 30px;
+    }
+
+    .executive-room {
+        margin: 0;
+        position: relative;
+        top: 48.51px;
+        left: 30px;
+    }
+
+    .view-room-2 {
+        margin: 0;
+        position: relative;
+        top: 58.51px;
+        left: 30px;
+    }
+
+    .standard-room {
+        margin-top: 0;
+        margin-bottom: 114px;
+        position: relative;
+        top: 68.51px;
+        left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    .features-section .title {
+        display: none;
+    }
+
+    .mobile-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 281px;
+    }
+
+    .classic-room .image-section,
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        left: -10px;
+    }
+
+    .classic-room .mobile-button,
+    .view-room .mobile-button,
+    .view-room-2 .mobile-button{
+        right: 83px;
+    }
+
+    .deluxe-room .mobile-button,
+    .executive-room .mobile-button,
+    .standard-room .mobile-button {
+        left: 83px;
+    }
+
+    .classic-room .features, 
+    .deluxe-room .features,
+    .view-room .features,
+    .executive-room .features,
+    .view-room-2 .features,
+    .standard-room .features{
+        left: 144px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hotel-img-1 {
+        margin-left: -60px;
+        margin-right: 60px;
+    }
+
+    .hotel-img-2 {
+        margin-right: 30px;
+    }
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 254px;
+    }
+
+    .classic-room .image-section,
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        left: -20px;
+    }
+
+    .classic-room .mobile-button,
+    .view-room .mobile-button,
+    .view-room-2 .mobile-button{
+        right: 63px;
+    }
+
+    .deluxe-room .mobile-button,
+    .executive-room .mobile-button,
+    .standard-room .mobile-button {
+        left: 84px;
+    }
+
+    .classic-room .features, 
+    .deluxe-room .features,
+    .view-room .features,
+    .executive-room .features,
+    .view-room-2 .features,
+    .standard-room .features{
+        left: 134px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hotel-img-1 {
+        margin-left: -60px;
+        margin-right: 50px;
+    }
+
+    .hotel-img-2 {
+        margin-right: 20px;
+    }
+
+    .classic-room .image-section,
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        left: -20px
+    }
+
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 239px;
+    }
+
+    .classic-room .mobile-button,
+    .view-room .mobile-button,
+    .view-room-2 .mobile-button{
+        right: 45px;
+    }
+
+    .deluxe-room .mobile-button,
+    .executive-room .mobile-button,
+    .standard-room .mobile-button {
+        left: 100px;
+    }
+
+    .classic-room .features, 
+    .deluxe-room .features,
+    .view-room .features,
+    .executive-room .features,
+    .view-room-2 .features,
+    .standard-room .features{
+        left: 134px;
+        width: 147px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .background {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 440px;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    }
+    
+    .landing-area .landing-image {
+        position: relative;
+        width: 100%;
+        height: 440px;
+        left: 0px;
+        top: 0;
+    }
+    .landing-image .content {
+        display: none;
+    }
+
+    .hotel-img-1 {
+        width: 116px;
+        height: 56px;
+        margin-left: -30px;
+        margin-right: 50px;
+    }
+
+    .hotel-img-2 {
+        width: 81px;
+        height: 59px;
+        margin-right: 40px;
+    }
+
+    .hotel-img-3 {
+        width: 159.41px;
+        height: 62.21px;
+    }
+
+    .classic-room .image-section,
+    .view-room .image-section,
+    .view-room-2 .image-section {
+        position: relative;
+        width: 280px;
+        height: 270px;
+        left: 66px;
+    }
+
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        position: relative;
+        width: 280px;
+        height: 270px;
+        right: 45px
+    }
+
+    .classic-room .image-content, 
+    .deluxe-room .image-content,
+    .view-room .image-content,
+    .view-room-2 .image-content,
+    .executive-room .image-content,
+    .standard-room .image-content {
+        left: 0;
+        width: 280px;
+    }
+
+    .classic-room .payment, 
+    .deluxe-room .payment,
+    .view-room .payment,
+    .executive-room .payment,
+    .view-room-2 .payment,
+    .standard-room .payment {
+        top: 169px;
+        font-size: 16px;
+    }
+    
+    .classic-room .reviews,
+    .deluxe-room .reviews,
+    .view-room .reviews,
+    .executive-room .reviews,
+    .view-room-2 .reviews,
+    .standard-room .reviews {
+        top: 192px;
+        font-size: 16px;
+    }
+    
+     .classic-room .stars .green,
+     .deluxe-room .stars .green,
+     .view-room .stars .green,
+     .executive-room .stars .green,
+     .view-room-2 .stars .green,
+     .standard-room .stars .green {
+        top: 217px;
+    }
+    
+    .classic-room .stars .white,
+    .view-room .stars .white,
+    .view-room-2 .stars .white {
+        top: 217px;    
+    }
+
+    .deluxe-room .stars .white,
+    .executive-room .stars .white,
+    .standard-room .stars .white {
+        top: 197px;
+    }
+
+    .classic-room .features,
+    .deluxe-room .features,
+    .executive-room .features,
+    .standard-room .features {
+        top: 86%;
+        width: 208px;
+        height: 104px;
+        right: 45px;
+        line-height: 17px
+    }
+
+    .deluxe-room .features,
+    .executive-room .features,
+    .standard-room .features {
+       left: 64px;
+    }
+
+    .view-room .features {
+        top: 190%;
+        width: 208px;
+        height: 104px;
+        right: 45px;
+        line-height: 17px
+    }
+
+    .view-room-2 .features {
+        top: 285%;
+        width: 208px;
+        height: 104px;
+        right: 45px;
+        line-height: 17px
+    }
+
+    .features button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 17px;
+        width: 200.09px;
+        height: 37px;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+
+    .classic-room .features button {
+        right: 72px;
+    }
+
+    .view-room .features button,
+    .view-room-2 .features button {
+        right: 51px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .classic-room .image-section, 
+    .deluxe-room .image-section,
+    .view-room .image-section,
+    .view-room-2 .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section{
+        position: relative;
+        width: 320px;
+        height: 300px;
+    }
+
+    .deluxe-room .image-section,
+    .executive-room .image-section,
+    .standard-room .image-section {
+        right: 84px;
+    }
+
+    .classic-room .image-content, 
+    .deluxe-room .image-content,
+    .view-room .image-content,
+    .view-room-2 .image-content,
+    .executive-room .image-content,
+    .standard-room .image-content {
+        left: 0;
+        width: 320px;
+    }
+
+    .classic-room .payment, 
+    .deluxe-room .payment,
+    .view-room .payment,
+    .executive-room .payment,
+    .view-room-2 .payment,
+    .standard-room .payment {
+        top: 199px;
+        font-size: 16px;
+    }
+    
+    .classic-room .reviews,
+    .deluxe-room .reviews,
+    .view-room .reviews,
+    .executive-room .reviews,
+    .view-room-2 .reviews,
+    .standard-room .reviews {
+        top: 222px;
+        font-size: 16px;
+    }
+    
+     .classic-room .stars .green,
+     .deluxe-room .stars .green,
+     .view-room .stars .green,
+     .executive-room .stars .green,
+     .view-room-2 .stars .green,
+     .standard-room .stars .green {
+        top: 247px;
+    }
+    
+    .classic-room .stars .white,
+    .view-room .stars .white,
+    .view-room-2 .stars .white {
+        top: 247px;    
+    }
+
+    .deluxe-room .stars .white,
+    .executive-room .stars .white,
+    .standard-room .stars .white {
+        top: 227px;
+    }
+
+    .classic-room .features,
+    .deluxe-room .features,
+    .executive-room .features,
+    .standard-room .features {
+        top: 120%;
+        width: 228px;
+        height: 124px;
+        right: 85px;
+        line-height: 20px
+    }
+
+    .view-room .features {
+        top: 232%;
+        width: 228px;
+        height: 124px;
+        right: 85px;
+        line-height: 24px
+    }
+
+    .view-room-2 .features {
+        top: 345%;
+        width: 229px;
+        height: 124px;
+        right: 85px;
+        line-height: 24px
+    }
+
+    .features button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px;
+        width: 209.09px;
+        height: 41px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .classic-room .features button,
+    .view-room .features button,
+    .view-room-2 .features button {
+        right: 57px;
+    }
+    
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1224px) {
+
+        body {
+            overflow-x: hidden;
+        }
+    
+        .background {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 470px;
+            left: 0;
+            top: 0;
+            background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+        }
+        
+        .landing-area .landing-image {
+            position: relative;
+            width: 100%;
+            height: 470px;
+            left: 0px;
+            top: 0;
+        }
+        .landing-image .content {
+            display: none;
+        }
+    
+        .hotel-img-1 {
+            width: 116px;
+            height: 56px;
+            margin-right: 250px;
+        }
+    
+        .hotel-img-2 {
+            width: 81px;
+            height: 59px;
+            margin-right: 200px;
+        }
+    
+        .hotel-img-3 {
+            width: 159.41px;
+            height: 62.21px;
+        }
+    
+        .classic-room .image-section, 
+        .deluxe-room .image-section,
+        .view-room .image-section,
+        .view-room-2 .image-section,
+        .executive-room .image-section,
+        .standard-room .image-section{
+            position: relative;
+            width: 400px;
+            height: 331px;
+        }
+
+        .deluxe-room .image-section {
+            right: 104px;
+        }
+
+        .classic-room .image-content, 
+        .deluxe-room .image-content,
+        .view-room .image-content,
+        .view-room-2 .image-content,
+        .executive-room .image-content,
+        .standard-room .image-content {
+            left: 0;
+            width: 400px;
+        }
+
+        .classic-room .features,
+        .deluxe-room .features,
+        .executive-room .features,
+        .standard-room .features {
+            top: 95%;
+            width: 258px;
+            height: 154px;
+            right: 111px;
+            line-height: 24px
+        }
+
+        .view-room .features {
+            top: 215%;
+            width: 258px;
+            height: 154px;
+            right: 111px;
+            line-height: 24px
+        }
+
+        .view-room-2 .features {
+            top: 332%;
+            width: 258px;
+            height: 154px;
+            right: 111px;
+            line-height: 24px
+        }
+
+        .features button {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 10px 20px;
+            width: 209.09px;
+            height: 41px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .classic-room .features button,
+        .view-room .features button,
+        .view-room-2 .features button {
+            right: 25px;
+        }
+        
+}

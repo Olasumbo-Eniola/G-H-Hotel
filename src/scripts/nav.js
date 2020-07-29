@@ -12,15 +12,12 @@ menuActivator.addEventListener('click', ()=>{
 })
 
 // Active state code. DO NOT EDIT!
-let borderColors = ['#00A799', '#f8872b', '#2bb7f8', '#f0603d']
 const navLinks = document.querySelectorAll('.navigation .links-list .links');
 const currentPageName = document.querySelector('.current-page-name')
 navLinks.forEach(( navLink, i) => {
     let currentWindowLocation = window.location.href.toString().toLowerCase();
     let navigationName = navLink.id
-    if(window.innerWidth < 768){
-        navLink.style.borderLeft = `7px solid ${borderColors[i]}`
-    }
+   
     
     if(currentWindowLocation.includes(navigationName)){
         navLink.classList.add('active')

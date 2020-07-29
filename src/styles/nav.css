@@ -1,0 +1,129 @@
+.facility-nav{
+    background: #0F5F5C;
+}
+.nav-item{
+    padding-right: 30px;
+}
+.nav-item .nav-link{
+    color: #ffffff;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+.nav-item .nav-link.item-active{
+    background: #ffffff;
+    color: #072522;
+   border-radius: 50px;
+}
+.navbar-brand{
+    padding-left: 30px;
+}
+.bg {
+    /* The image used */
+    background-image: url("../images/Hero\ img.png");
+  
+    /* Full height */
+    height: 100%;
+  position: relative;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .filter{
+    background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .main-text{
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .main-text h2{
+      font-size: 55px;
+      font-weight: normal;
+  }
+  .main-text p{
+      font-size: 20px;
+  }
+  
+ .text-section{
+     margin-top: 60px;
+     padding-left: 50px !important;
+     padding-right: 50px !important;
+     margin-bottom: 60px;
+ }
+ .text-section h3{
+    font-style: normal;
+    font-weight: 30px;
+    line-height: 28px;
+    color: #0F5F5C;
+        
+ }
+ .card-columns{
+     padding-left: 40px !important;
+     padding-right: 40px !important;
+     border: none !important;
+ }
+ .text-section p{
+     padding-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #072522;
+        
+ }
+ .card{
+     border-radius: 0px !important;
+     padding-bottom: 100px !important;
+     margin-bottom: 50px !important;
+     box-shadow: none !important;
+     border: none !important;
+     padding-top: 100px !important;
+ }
+ .first{
+     background: url(../images/massage.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .second{
+     background: url(../images/swim.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .third{
+     background: url(../images/lounge.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .fourth{
+     background: url(../images/restaurant.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .fifth{
+     background: url(../images/gym.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .sixth{
+     background: url(../images/bar.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .card-text{
+    background: #ffffffcc;
+    color: #072522;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+ }

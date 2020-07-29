@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +12,42 @@
     <link rel="stylesheet" href="../src/styles/navigation.css">
     <link rel="stylesheet" href="../src/styles/footer.css">
     <link rel="stylesheet" href="../src/styles/facilities.css">
+    <link rel="stylesheet" href="../src/styles/nav.css">
     <title> G-H Hotel </title>
 </head>
 <body>
 
     <header id="header">
-        <div class="site-name">
-            <h4 class="top-text"> G </h4>
-            <h4 class="bottom-text"> <span class="ampersand">&</span> H</h4>
-        </div>
-        <div class="arrow-back"> <i class="material-icons md-48"> keyboard_arrow_left </i></div>
-        <div class="current-page-name"></div>
-        <nav class="navigation">
-            <ul class="links-list">
-                <a href="home.html" class="links" id="home"> <li class="link-name"> Home </li> </a>
-                <a href="rooms.html" class="links" id="rooms"> <li class="link-name"> Rooms </li> </a>
-                <a href="facilities.html" class="links" id="facilities"> <li class="link-name"> Facilities </li> </a>
-                <a href="contact-us.html" class="links" id="contact-us"> <li class="link-name"> Contact Us </li> </a>
-            </ul>
+        <nav class="navbar navbar-expand-md facility-nav fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="../src/images/LOGO.svg">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-active" href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                   
+                </ul>
+               
+            </div>
         </nav>
         <div id="menu">
             <div class="activator"><i class="material-icons menu-icon"> menu </i> </div>
         </div>
     </header>
+
     <div class="head">
         <div class="myImg">
         <div class="text">
